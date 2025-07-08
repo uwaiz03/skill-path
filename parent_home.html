@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Path - Parent Dashboard</title>
+    <link rel="stylesheet" href="/parent_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon"><i class="fas fa-lightbulb"></i></span>
+            <h1>Skill Path</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Reports</a>
+            <a href="#">Goals</a>
+            <a href="#">Resources</a>
+        </div>
+        <div class="profile">
+            <div class="dropdown">
+                <button class="profile-btn">
+                    <img src="/women.jpeg" alt="Profile Picture" class="profile-pic">
+                    <span>Sarah Johnson</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-user"></i> Profile</a>
+                    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="welcome-banner">
+            <div class="welcome-text">
+                <h2>Welcome back, Sarah!</h2>
+                <p>Your child, <strong>Uwais Abdul Salam</strong>, is making great progress on their skill development journey.</p>
+            </div>
+            <div class="notifications">
+                <div class="notification-badge">3</div>
+                <i class="fas fa-bell"></i>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card assessment-results">
+                <div class="card-header">
+                    <h3><i class="fas fa-chart-bar"></i> Assessment Results</h3>
+                    <button class="see-all-btn">See All</button>
+                </div>
+                <div class="results-chart">
+                    <div class="chart-container">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                    <div class="results-summary">
+                        <p>Latest assessment completed: <span>May 7, 2025</span></p>
+                        <div class="top-skills">
+                            <h4>Top 3 Strengths:</h4>
+                            <ul>
+                                <li>Creative Thinking</li>
+                                <li>Logical Reasoning</li>
+                                <li>Verbal Communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card progress-report">
+                <div class="card-header">
+                    <h3><i class="fas fa-tasks"></i> Progress Report</h3>
+                    <button class="see-all-btn">See All</button>
+                </div>
+                <div class="progress-items">
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Problem Solving</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Critical Thinking</span>
+                            <span>62%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 62%"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Artistic Ability</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Teamwork</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card learning-tips">
+                <div class="card-header">
+                    <h3><i class="fas fa-lightbulb"></i> Learning Tips</h3>
+                </div>
+                <div class="tips-container">
+                    <div class="tip">
+                        <div class="tip-icon"><i class="fas fa-palette"></i></div>
+                        <div class="tip-content">
+                            <h4>Nurture Creative Thinking</h4>
+                            <p>Encourage Uwais to engage in artistic activities like drawing, creative writing, or DIY crafts to further enhance their creative abilities.</p>
+                        </div>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon"><i class="fas fa-puzzle-piece"></i></div>
+                        <div class="tip-content">
+                            <h4>Strengthen Problem-Solving</h4>
+                            <p>Introduce Uwais to puzzle games and brain teasers that challenge their analytical thinking and problem-solving skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card goal-setting">
+                <div class="card-header">
+                    <h3><i class="fas fa-bullseye"></i> Goals & Milestones</h3>
+                    <button id="add-goal-btn" class="btn primary-btn"><i class="fas fa-plus"></i> Add Goal</button>
+                </div>
+                <div class="goals-container">
+                    <div class="goal">
+                        <div class="goal-header">
+                            <h4>Complete Science Fair Project</h4>
+                            <span class="goal-badge in-progress">In Progress</span>
+                        </div>
+                        <div class="goal-details">
+                            <div class="deadline">
+                                <i class="fas fa-calendar"></i>
+                                <span>Due: May 25, 2025</span>
+                            </div>
+                            <div class="goal-progress">
+                                <div class="progress-info">
+                                    <span>Progress</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goal">
+                        <div class="goal-header">
+                            <h4>Math Skills Improvement</h4>
+                            <span class="goal-badge completed">Completed</span>
+                        </div>
+                        <div class="goal-details">
+                            <div class="deadline">
+                                <i class="fas fa-calendar"></i>
+                                <span>Completed: April 30, 2025</span>
+                            </div>
+                            <div class="goal-progress">
+                                <div class="progress-info">
+                                    <span>Progress</span>
+                                    <span>100%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card recommended-activities">
+                <div class="card-header">
+                    <h3><i class="fas fa-star"></i> Recommended Activities</h3>
+                </div>
+                <div class="activities-container">
+                    <div class="activity">
+                        <div class="activity-image">
+                            <img src="/coding class.jpg" alt="Coding Class">
+                        </div>
+                        <div class="activity-details">
+                            <h4>Introduction to Coding</h4>
+                            <p>Based on Uwais's logical reasoning skills, this activity will help develop programming fundamentals.</p>
+                            <button class="btn secondary-btn">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-image">
+                            <img src="/creative.jpeg" alt="Art Workshop">
+                        </div>
+                        <div class="activity-details">
+                            <h4>Creative Art Workshop</h4>
+                            <p>This workshop will further enhance Uwais's creative thinking and artistic abilities.</p>
+                            <button class="btn secondary-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="goal-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Goal</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="goal-form">
+                    <div class="form-group">
+                        <label for="goal-title">Goal Title</label>
+                        <input type="text" id="goal-title" placeholder="Enter goal title">
+                    </div>
+                    <div class="form-group">
+                        <label for="goal-description">Description</label>
+                        <textarea id="goal-description" placeholder="Enter goal description"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="goal-deadline">Deadline</label>
+                            <input type="date" id="goal-deadline">
+                        </div>
+                        <div class="form-group">
+                            <label for="goal-category">Category</label>
+                            <select id="goal-category">
+                                <option value="academic">Academic</option>
+                                <option value="skills">Skills Development</option>
+                                <option value="personal">Personal Growth</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" class="btn secondary-btn cancel-btn">Cancel</button>
+                        <button type="submit" class="btn primary-btn">Add Goal</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>Skill Path</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Skill Path. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="/parent_home.js"></script>
+</body>
+</html>

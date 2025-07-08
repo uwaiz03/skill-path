@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Path - Parent Login</title>
+    <link rel="stylesheet" href="/parent_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo-container">
+                <div class="logo">
+                    <span class="logo-icon"><i class="fas fa-lightbulb"></i></span>
+                    <span class="logo-text">Skill Path</span>
+                </div>
+                <p class="tagline">Guiding Your Child's Future</p>
+            </div>
+            <div class="feature-highlights">
+                <h2>Welcome, Parents!</h2>
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <p>Track your child's progress and assessment results</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Get personalized tips to support their learning journey</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-trophy"></i>
+                    <p>Set goals and milestones for their development</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"Skill Path helped my daughter discover her passion for science. The personalized guidance has been invaluable!"</p>
+                <p class="testimonial-author">- Sarah Johnson, Parent</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="login-container">
+                <h2>Parent Login</h2>
+                <div class="login-form">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <div class="password-input">
+                            <input type="password" id="password" placeholder="Enter your password">
+                            <i class="fas fa-eye-slash toggle-password" id="togglePassword"></i>
+                        </div>
+                        <span class="error-message" id="password-error"></span>
+                    </div>
+                    <div class="remember-forgot">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="login-btn" id="loginBtn">Log In</button>
+                    <div class="login-divider">
+                        <span>or</span>
+                    </div>
+                    <div class="social-login">
+                        <button class="google-btn">
+                            <i class="fab fa-google"></i>
+                            Sign in with Google
+                        </button>
+                    </div>
+                </div>
+                <div class="register-link">
+                    <p>New to Skill Path? <a href="#">Register here</a></p>
+                </div>
+                <div class="other-logins">
+                    <p>Are you a <a href="#">Student</a> or <a href="#">Teacher</a>?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/parent_login.js"></script>
+</body>
+</html>

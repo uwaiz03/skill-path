@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Path - Discover Your Future</title>
+    <link rel="stylesheet" href="stud_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    
+    <header>
+        <div class="logo">
+            <span class="logo-icon"><i class="fas fa-lightbulb"></i></span>
+            <span class="logo-text">Skill Path</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#assessments">Assessments</a></li>
+                <li><a href="#dashboard">My Dashboard</a></li>
+                <li><a href="#careers">Career Paths</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <div class="notifications">
+                <i class="fas fa-bell"></i>
+                <span class="notification-badge">2</span>
+            </div>
+            <div class="avatar">
+                <img src="/yahya 1.jpg" alt="Student Avatar">
+                <span class="online-status"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="welcome-message">
+                    <i class="fas fa-hand-wave"></i>
+                    <h2>Hi Yahya!</h2>
+                </div>
+                <h1>Discover Your <span class="highlight">Hidden Talents</span></h1>
+                <p>Explore your strengths, interests, and potential career paths with our fun and interactive assessments.</p>
+                <div class="cta-buttons">
+                    <a href="activitytestpage.html" class="btn primary-btn">Start Assessment <i class="fas fa-arrow-right"></i></a>
+                    <a href="#how-it-works" class="btn secondary-btn">How It Works</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/career-exploration.jpg" alt="Students exploring careers">
+                <div class="floating-icon icon-1"><i class="fas fa-brain"></i></div>
+                <div class="floating-icon icon-2"><i class="fas fa-laptop-code"></i></div>
+                <div class="floating-icon icon-3"><i class="fas fa-paint-brush"></i></div>
+                <div class="floating-icon icon-4"><i class="fas fa-microscope"></i></div>
+            </div>
+        </section>
+
+        <section id="assessments" class="assessment-section">
+            <h2>Discover Your Path</h2>
+            <p class="section-desc">Complete these fun assessments to unlock your potential</p>
+            
+            <div class="assessment-cards">
+                <div class="assessment-card">
+                    <div class="card-icon personality">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Personality Test</h3>
+                    <p>Discover your unique personality traits and how they align with different careers.</p>
+                    <div class="card-meta">
+                        <span class="time"><i class="far fa-clock"></i> 15 minutes</span>
+                        <span class="difficulty easy"><i class="fas fa-star"></i> Easy</span>
+                    </div>
+                    <a href="activitytestpage.html">
+                        <button class="start-btn">Start Test</button>
+                    </a>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div class="assessment-card">
+                    <div class="card-icon aptitude">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Aptitude Assessment</h3>
+                    <p>Test your problem-solving skills, logical reasoning, and creative thinking.</p>
+                    <div class="card-meta">
+                        <span class="time"><i class="far fa-clock"></i> 20 minutes</span>
+                        <span class="difficulty medium"><i class="fas fa-star"></i> Medium</span>
+                    </div>
+                    <a href="activitytestpage.html">
+                        <button class="start-btn">Start Test</button>
+                    </a>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div class="assessment-card">
+                    <div class="card-icon interest">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Interest Inventory</h3>
+                    <p>Explore your interests and discover how they connect to exciting career options.</p>
+                    <div class="card-meta">
+                        <span class="time"><i class="far fa-clock"></i> 10 minutes</span>
+                        <span class="difficulty easy"><i class="fas fa-star"></i> Easy</span>
+                    </div>
+                    <a href="activitytestpage.html">
+                        <button class="start-btn">Start Test</button>
+                    </a>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div class="assessment-card">
+                    <div class="card-icon skills">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Skills Assessment</h3>
+                    <p>Identify your strengths and areas for growth through practical activities.</p>
+                    <div class="card-meta">
+                        <span class="time"><i class="far fa-clock"></i> 25 minutes</span>
+                        <span class="difficulty hard"><i class="fas fa-star"></i> Challenging</span>
+                    </div>
+                    <a href="activitytestpage.html">
+                        <button class="start-btn">Start Test</button>
+                    </a>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="dashboard-preview">
+            <h2>Your Progress Dashboard</h2>
+            <p class="section-desc">Track your skills and see how they're growing over time</p>
+            
+            <div class="dashboard-container">
+                <div class="skills-radar">
+                    <h3>Your Skills Radar</h3>
+                    <div class="radar-chart">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="recent-activity">
+                    <h3>Recent Activity</h3>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon completed">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Personality Test Completed</h4>
+                                <p>You scored highest in Artistic and Investigative traits</p>
+                                <span class="activity-time">2 days ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon in-progress">
+                                <i class="fas fa-spinner"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Skills Assessment Started</h4>
+                                <p>You've completed 2/5 modules</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon upcoming">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>New Assessment Available</h4>
+                                <p>Creative Problem Solving Challenge</p>
+                                <span class="activity-time">Just added</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="careers" class="career-suggestions">
+            <h2>Career Paths You Might Love</h2>
+            <p class="section-desc">Based on your assessment results and interests</p>
+            
+            <div class="career-path-slider">
+                <div class="career-card">
+                    <div class="career-image">
+                        <img src="/software-developer.jpg" alt="Software Developer">
+                        <div class="match-badge">87% Match</div>
+                    </div>
+                    <h3>Software Developer</h3>
+                    <p>Create applications, websites, and software systems that solve real-world problems.</p>
+                    <div class="career-traits">
+                        <span>Logical</span>
+                        <span>Creative</span>
+                        <span>Problem-Solver</span>
+                    </div>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="career-card">
+                    <div class="career-image">
+                        <img src="/UI-UX.jpg" alt="UX Designer">
+                        <div class="match-badge">92% Match</div>
+                    </div>
+                    <h3>UX Designer</h3>
+                    <p>Design digital experiences that are intuitive, accessible, and enjoyable for users.</p>
+                    <div class="career-traits">
+                        <span>Artistic</span>
+                        <span>Empathetic</span>
+                        <span>Analytical</span>
+                    </div>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="career-card">
+                    <div class="career-image">
+                        <img src="/Environmental-Sciences.jpg" alt="Environmental Scientist">
+                        <div class="match-badge">79% Match</div>
+                    </div>
+                    <h3>Environmental Scientist</h3>
+                    <p>Study and protect our natural environment and develop solutions for environmental challenges.</p>
+                    <div class="career-traits">
+                        <span>Investigative</span>
+                        <span>Nature-Loving</span>
+                        <span>Detail-Oriented</span>
+                    </div>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="career-card">
+                    <div class="career-image">
+                        <img src="/digital.png" alt="Digital Marketing Specialist">
+                        <div class="match-badge">85% Match</div>
+                    </div>
+                    <h3>Digital Marketing Specialist</h3>
+                    <p>Create and implement strategies to promote products and services online.</p>
+                    <div class="career-traits">
+                        <span>Creative</span>
+                        <span>Strategic</span>
+                        <span>Communication</span>
+                    </div>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <h2>How Skill Path Works</h2>
+            <p class="section-desc">Four simple steps to discover your ideal career path</p>
+            
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Take Assessments</h3>
+                    <p>Complete fun quizzes and interactive activities that measure your skills and interests.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Get Insights</h3>
+                    <p>Receive personalized feedback about your strengths, interests, and learning style.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Explore Careers</h3>
+                    <p>Discover career paths that match your unique combination of skills and interests.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Plan Your Future</h3>
+                    <p>Learn about education paths and resources to help you achieve your career goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Students Say</h2>
+            <p class="section-desc">Hear from students who have discovered their paths</p>
+            
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <div class="student-info">
+                        <img src="/sridharan.jpeg" alt="Student Avatar" class="student-avatar">
+                        <div>
+                            <h4>Sridharan VG</h4>
+                            <p>9th Grade Student</p>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Before Skill Path, I had no idea what I wanted to do. Now I've discovered my passion for coding and design. The assessments were fun and surprisingly accurate!</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="student-info">
+                        <img src="/uwais.jpeg" alt="Student Avatar" class="student-avatar">
+                        <div>
+                            <h4>Uwais Abdul Salam</h4>
+                            <p>11th Grade Student</p>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>The career suggestions I received matched my interests perfectly. I'm now exploring environmental science and have joined related clubs at school thanks to Skill Path!</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="student-info">
+                        <img src="akshaay.jpg" alt="Student Avatar" class="student-avatar">
+                        <div>
+                            <h4>Akshaay Krithick N</h4>
+                            <p>8th Grade Student</p>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>I was surprised to learn I have strong leadership skills! The dashboard helps me track my progress, and I love seeing how my skills are improving over time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <span class="logo-icon"><i class="fas fa-lightbulb"></i></span>
+                    <span class="logo-text">Skill Path</span>
+                </div>
+                <p>Helping students discover their talents and find their perfect career paths.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#assessments">Assessments</a></li>
+                    <li><a href="#dashboard">My Dashboard</a></li>
+                    <li><a href="#careers">Career Paths</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <p>Sign up for our newsletter to get the latest updates!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Skill Path. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="stud_home.js"></script>
+</body>
+</html>
